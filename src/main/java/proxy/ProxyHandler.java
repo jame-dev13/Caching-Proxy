@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  * that catch the request for the client side y check into the cache, if the
  * url is in, just return the data associated, support only method GET, and http protocol,
  * for https requests it only forward client - server, server - client. due to Socket can't read
- * an SSL communication, and using an SSL socket implies to generate own CA certifies, witch clients like POSTMAN
+ * an SSL communication, and using an SSL socket implies to generate own CA certifies, which clients like POSTMAN
  * or the BROWSERS have to validate and it maybe or not be valid depends on the case.
  */
 public final class ProxyHandler {
@@ -169,11 +169,11 @@ public final class ProxyHandler {
     *    remoteInput.transferTo(buffer);
     *    return buffer;
     * }<pre/>
-    * @param headers the {@code List<String> headers} witch contains the request headers.
+    * @param headers the {@code List<String> headers} which contains the request headers.
     * @param url the {@code URL url} to do the request.
     * @param remoteWriter the {@code BufferedWriter remoteWriter} to write the request and request headers from the client.
     * @param remoteIn the response input from the remote.
-    * @return buffer - the {@code ByteArrayOutputStream} witch the response was transmitted.
+    * @return buffer - the {@code ByteArrayOutputStream} which the response was transmitted.
     * @throws IOException on I/O error.
     */
    private ByteArrayOutputStream forwardHttp(final List<String> headers,
